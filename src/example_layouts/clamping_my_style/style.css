@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    padding: 4rem;
+}
+
+.parent {
+    display: grid;
+    place-items: center;
+}
+
+.purple {
+    background-color: rgb(150, 67, 150);
+}
+
+.card {
+    width: clamp(23ch, 50%, 46ch);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* clamp will tell how thick will be the card in this case. Will remain in 50% until goes below 23 character size or beyond 46 character size */
+    /* display flex will align the items in a block axis */
+    font-size: 2rem;
+}
+
+
+.visual {
+    height: 12.5rem;
+    width: 100%;
+    background-color: rgb(255, 255, 19);
+}

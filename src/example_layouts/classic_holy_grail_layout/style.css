@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    /* first rows, later columns. The same as pancake stack but is one inside the other*/
+}
+
+header {
+    grid-column: 1 / 4;
+    background-color: lightcoral;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.nav-left{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: lightblue;
+    font-size: 3rem;
+}
+
+section {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: lightgray;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.nav-right {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: lightgreen;
+    font-size: 3rem;
+}
+
+footer {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    background-color: lightseagreen;
+    font-size: 3rem;
+}

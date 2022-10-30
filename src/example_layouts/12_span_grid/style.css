@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* how many times will repeat and how large */
+}
+
+header {
+    background-color: lightsalmon;
+    grid-column: 1 / span 12;
+
+    display: grid;
+    place-items: center;
+    /* centering text */
+
+    font-size: 4rem;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+}
+
+section:nth-of-type(1){
+    background-color: lightcyan;
+    grid-column: 1 / 6;
+    /* adding the "span" doesn't make any difference */
+}
+
+section:nth-of-type(2){
+    background-color: lightgray;
+    grid-column: 4 / span 4;
+}
+
+section:nth-of-type(3){
+    background-color: lightseagreen;
+    grid-column: 3 / span 2;
+}

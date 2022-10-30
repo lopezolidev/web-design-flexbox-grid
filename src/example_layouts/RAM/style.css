@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.parent-white {
+    height: 100%;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    /* how many times will repeat and how large. This time filling up as many real columns as it can and having a fixed minimum size and max size. Good choice for responsive design */
+
+}
+
+.box {
+    color: white;
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}

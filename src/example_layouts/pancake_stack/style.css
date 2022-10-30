@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* first and last rows will occupy as much space as content fills them up, second one will have as much elements can fill up the space. Good layout to not implement reponsive design */
+}
+
+header {
+    grid-row: 1 / 2;
+    background-color: lightcoral;
+}
+
+main {
+    grid-row: 2 / 3;
+    background-color: lightseagreen;
+}
+
+footer {
+    grid-row: 3 / 4;
+    background-color: lightskyblue;
+}

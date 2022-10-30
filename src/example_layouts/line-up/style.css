@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    padding: 4rem;
+}
+
+.parent {
+
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    /* height will be auto because will adapt to the size of the children */
+    /* will generate 3 columns */
+}
+
+.card {
+    background-color: burlywood;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* this way the content will stretch in the block axis */
+}
+
+.visual{
+    height: 5rem;
+    width: 5rem;
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.green {
+    background-color: lightgreen;
+}

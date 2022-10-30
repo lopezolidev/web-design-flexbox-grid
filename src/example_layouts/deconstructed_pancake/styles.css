@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* wrap makes the items ocupy the space that is left, justify-content puts it in the center */
+
+    background-color: rgb(66, 66, 255);
+    height: 100vh;
+    width: 100%;
+}
+
+body div {
+    display: flex;
+    flex: 0 1 15rem;
+    /*  0 = flex-grow → won't stretch to additional sizes
+        1 = flex-shink → will shrink on smaller sizes
+        15rem = flex-basis → "minimum" size*/
+
+    /*flex: 1 1 15rem; */
+    /*  1 = flex-grow → will stretch to additional sizes
+        1 = flex-shink → will shrink on smaller sizes
+        15rem = flex-basis → "minimum" size*/
+
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: brown;
+    background-color: rgb(120, 201, 120);
+    border: 0.4rem solid black;
+    border-radius: 10%;
+    margin: 1rem;
+}

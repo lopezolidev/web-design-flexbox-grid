@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    
+}
+
+.parent {
+    display: grid;
+    place-items: center;
+}
+
+.visual {
+    aspect-ratio: 16 / 9;
+    /* not supported in all browsers, bot keeps the ratio of grow along the size of the screen  */
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+.blue 
+{
+    background-color: lightsteelblue;
+}
+
+.green {
+    background-color: lightgreen;
+}
