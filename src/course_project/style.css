@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --blue: #EAF0F8;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;;
+}
+
+/* wrapper styles */
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10rem auto 20rem;
+    /* 12rem 30rem 8rem */
+    background-color: #1C1F24;
+    color: white;
+}
+
+/* header styles */
+
+.wrapper header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-arrow-down {
+    height: 4rem;
+    width: 4rem;
+    background-image: url("https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/96/FFFFFF/external-arrow-down-arrow-line-royyan-wijaya-detailed-outline-royyan-wijaya.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4rem;
+    box-shadow:  5px 5px 10px #0e0d0b,
+    -5px -5px 10px #3a352d;
+}
+
+.wrapper header h3 {
+    font-size: 1.2rem;
+}
+
+.header-menu {
+    height: 4rem;
+    width: 4rem;
+    background-image: url("https://img.icons8.com/ios/100/FFFFFF/menu-rounded.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow:  5px 5px 10px #0e0d0b,
+    -5px -5px 10px #3a352d;
+}
+/* main container styles */
+
+main {
+    grid-row: 2 / 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+    /* album container styles */
+.album-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.album-container img {
+    height: 22rem;
+    width: 22rem;
+    border-radius: 2rem;
+    box-shadow:  12px 12px 33px #111215,
+             -12px -12px 33px #272c33;
+    /* applying neumorphism to image */
+}
+
+.album-container h1 {
+    font-size: 2.4rem;
+}
+
+.album-container h3 {
+    font-size: 1.8rem;
+    font-weight: lighter;
+} 
+    /* progress bar styles */
+.progress-bar {
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.timestamps {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.progress-bar .bar-container {
+    height: 0.2rem;
+    width: 26rem;
+    background-color: #111215;
+}
+
+.progress-bar .bar {
+    background-color: #37F600;
+    width: 70%;
+    height: 0.4rem;
+}
+
+/* footer styles (buttons) */
+.buttons-container{
+    height: 100%;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-rows: 1fr 0.35fr;
+    justify-items: center;
+    align-items: center;
+}
+
+    /* main buttons styles */
+.main-buttons {
+    width: 100%;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-buttons span {
+    height: 4rem;
+    width: 4rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4rem;
+    box-shadow:  6px 6px 12px #0b0c0e,
+    -6px -6px 12px #2d323a;
+}
+
+.main-buttons span:nth-of-type(3){
+    height: 8rem;
+    width: 8rem;
+    border-radius: 4rem;
+    box-shadow:  10px 10px 20px #0b0c0e,
+    -10px -10px 20px #2d323a;
+}
+
+.main-buttons span img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+}
+
+.main-buttons span:nth-of-type(1){
+    background-image: url("https://img.icons8.com/material-outlined/96/FFFFFF/like--v1.png");
+}
+
+.main-buttons span:nth-of-type(2){
+    background-image: url("https://img.icons8.com/ios/100/FFFFFF/circled-chevron-left.png");
+}
+
+.main-buttons span:nth-of-type(4){
+    background-image: url('https://img.icons8.com/windows/96/FFFFFF/circled-chevron-right.png');
+}
+
+.main-buttons span:nth-of-type(5){
+    background-image: url('https://img.icons8.com/ios/50/FFFFFF/share-2--v1.png');
+}
+
+.secondary-buttons {
+    width: 100%;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.secondary-buttons span {
+    height: 4rem;
+    width: 4rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4rem;
+    box-shadow:  6px 6px 12px #0b0c0e,
+    -6px -6px 12px #2d323a;
+}
+
+.secondary-buttons span:nth-of-type(1) {
+    background-image: url('https://img.icons8.com/ios/50/FFFFFF/cloud-link.png');
+}
+
+.secondary-buttons span:nth-of-type(2){
+    background-image: url('https://img.icons8.com/ios/50/FFFFFF/video-playlist.png');
+}
